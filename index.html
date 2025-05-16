@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
-
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
@@ -30,9 +33,15 @@
           <a href="#">CONTACT</a>
         </nav>
 
-        <button class="btn-signing" data-aos="zoom-in" data-aos-delay="600">
-          Register Now
-        </button>
+        <button
+        class="px-4 sm:px-8 z-30 py-2 sm:py-4 bg-rose-400 rounded-md text-white relative font-semibold 
+        after:-z-20 after:absolute after:h-1 after:w-1 after:bg-rose-800 after:left-5 overflow-hidden 
+        after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all 
+        after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 
+        [text-shadow:3px_5px_2px_#be123c] hover:[text-shadow:2px_2px_2px_#fda4af] text-lg sm:text-2xl"
+      >
+        Register Now
+      </button>
       </header>
 
       <main>
@@ -40,244 +49,126 @@
           <div class="tag-box" data-aos="zoom-in" data-aos-delay="200">
             <div class="tag">Introduction About Academy Coding &wedbar;</div>
           </div>
-
+        
           <h1 data-aos="fade-up" data-aos-delay="400">
             EMAIL FOR <br />
             DEVELOPERS
           </h1>
-
+        
           <p class="description" data-aos="fade-up" data-aos-delay="600">
             Ready to become a developer? Academy Coding offers hands-on lessons,
             real-world projects, and a community that supports your growth.
             Learn, build, and launch your coding career with us!
           </p>
-
-          <div class="buttons">
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
-              </span>
-              <span class="button-text">Join Now</span>
+        
+          <!-- WRAPPER TOMBOL -->
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+            <!-- BUTTON JOIN NOW -->
+            <div class="relative group">
+              <button
+                class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
+              >
+                <span
+                  class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                ></span>
+                <span class="relative z-10 block px-6 py-3 rounded-xl bg-gray-950">
+                  <div class="relative z-10 flex items-center space-x-2">
+                    <span class="transition-all duration-500 group-hover:translate-x-1">
+                      Join Now
+                    </span>
+                    <svg
+                      class="w-6 h-6 transition-transform duration-500 group-hover:translate-x-1"
+                      data-slot="icon"
+                      aria-hidden="true"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        clip-rule="evenodd"
+                        d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+                        fill-rule="evenodd"
+                      ></path>
+                    </svg>
+                  </div>
+                </span>
+              </button>
+            </div>
+        
+            <!-- BUTTON JOIN DEMO -->
+            <button
+              class="bg-violet-950 text-violet-400 border border-violet-400 border-b-4 font-medium overflow-hidden relative px-6 py-3 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group"
+            >
+              <span
+                class="bg-violet-400 shadow-violet-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"
+              ></span>
+              Join A Demo
             </button>
-            <a href="#" class="btn-signing-main">Watch Demo</a>
+          </div>
+        
+          <img class="images" src="Assets/logo.jpeg" alt="" />
+        </div>
+        
+    </main>
+
+    <div class="bg-[#0a0a0a] text-white">
+  
+      <section class="max-w-7xl mx-auto px-4 py-16 font-sans">
+        <h2 class="text-center text-[14px] font-semibold mb-12 tracking-widest">
+          <span class="text-[#9b4dff]">APA KATA</span>
+          <span class="text-[#5bc0f8]"> MEMBER</span>
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+          <!-- Testimonial 1 -->
+          <div class="border border-[#3a2a4a] rounded-lg p-6 flex flex-col justify-between min-h-[320px]">
+            <p class="text-[14px] leading-relaxed mb-6">
+              “Awalnya aku ragu karena gak punya background IT sama sekali. Tapi Academy Coding ngajarin bener-bener dari nol. Sekarang aku udah bisa bikin website portfolio sendiri dan dapet kerja remote!”
+            </p>
+            <div>
+              <p class="text-[13px] font-semibold mb-0">Valerie, 24 tahun</p>
+              <p class="text-[11px] text-[#b3b3b3] mb-2">Junior Frontend Developer</p>
+              <i class="fas fa-quote-right text-[#9b4dff] text-[18px]"></i>
+            </div>
+          </div>
+      
+          <!-- Testimonial 2 -->
+          <div class="border border-[#3a2a4a] rounded-lg p-6 flex flex-col justify-between min-h-[320px]">
+            <p class="text-[14px] leading-relaxed mb-6">
+              “Dulu gue kerja serabutan, sekarang udah bisa dapet penghasilan tetap dari freelance web development. Semua ini gara-gara belajar step-by-step di Academy Coding. Terima kasih banyak!”
+            </p>
+            <div>
+              <p class="text-[13px] font-semibold mb-0">Hasan, 30 tahun</p>
+              <p class="text-[11px] text-[#b3b3b3] mb-2">Freelance Web Developer</p>
+              <i class="fas fa-quote-right text-[#9b4dff] text-[18px]"></i>
+            </div>
+          </div>
+      
+          <!-- Testimonial 3 -->
+          <div class="border border-[#3a2a4a] rounded-lg p-6 flex flex-col justify-between min-h-[320px]">
+            <p class="text-[14px] leading-relaxed mb-6">
+              “Cuma butuh waktu 2 bulan belajar di Academy Coding dan gue udah bisa bikin aplikasi dengan React. Materinya padat, mentornya responsif, dan komunitasnya solid banget.”
+            </p>
+            <div>
+              <p class="text-[13px] font-semibold mb-0">Kenzo, 21 tahun</p>
+              <p class="text-[11px] text-[#b3b3b3] mb-2">Mahasiswa & React Developer</p>
+              <i class="fas fa-quote-right text-[#9b4dff] text-[18px]"></i>
+            </div>
           </div>
         </div>
-
-        <img class="images" src="Assets/logo.jpeg" alt="" />
-      </main>
-    </div>
-
-    <div class="testimoni-containers">
-      <h1>Apa Kata Member</h1>
-
-      <div class="testimoni">
-        <p>
-          Belajar di sini tuh asik banget! Awalnya aku nggak ngerti HTML sama
-          sekali, tapi sekarang aku udah bisa bikin landing page sendiri.
-          Gurunya juga sabar banget ngajarnya!
-        </p>
-        <h2>Valeri, 15 Tahun</h2>
-        <h3>Front-end Website</h3>
-      </div>
-
-      <div class="testimoni">
-        <p>
-          Jujur, aku kira coding itu ribet. Tapi setelah ikut kelas ini,
-          ternyata seru banget. Sekarang aku ngerti gimana cara kerja database
-          dan bikin API sederhana.
-        </p>
-        <h2>Hasan, 15 Tahun</h2>
-        <h3>Back-end Website</h3>
-      </div>
-
-      <div class="testimoni">
-        <p>
-          Aku paling suka pas diajarin bikin animasi pakai CSS. Seru dan
-          hasilnya keren banget! Sekarang aku jadi pengen terus explore dunia
-          front-end.
-        </p>
-        <h2>Laurent, 15 Tahun</h2>
-        <h3>Front-end Website</h3>
-      </div>
-
-      <div class="tooltip-container">
-        <span class="tooltip">Join Now Academy Coding</span>
-        <span class="text">
-          <div class="borde-back">
-            <div class="icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="23"
-                height="23"
-                class="bi bi-discord"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"
-                ></path>
-              </svg>
-            </div>
-          </div>
-        </span>
-      </div>
-    </div>
-
-    <div class="max-w-7xl mx-auto px-4 py-10">
-      <h1 class="text-center text-3xl font-extrabold mb-10">
-        Kenapa Akademi Coding?
-      </h1>
-      <div class="flex flex-col md:flex-row md:space-x-10">
-        <!-- Left side text and images -->
-        <div class="md:w-1/2 flex flex-col space-y-10">
-          <div class="flex items-start space-x-4">
-            <div class="flex flex-col items-center space-y-4">
-              <div
-                class="w-12 h-12 rounded-lg border border-white flex items-center justify-center text-white font-bold text-lg select-none hover:bg-white hover:text-black transition"
-              >
-                #01
-              </div>
-              <div
-                class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center -mt-2.5"
-              >
-                <img src="Assets/verify.png" alt="Ikon verifikasi biru" />
-              </div>
-            </div>
-            <div class="flex-1">
-              <p class="text-purple-600 font-semibold leading-relaxed">
-                Pelajari dasar-dasar programming
-                <span class="text-blue-600">
-                  dari nol hingga mahir dalam waktu 90 hari,
-                </span>
-              </p>
-              <p class="text-white leading-relaxed">
-                dengan modul terstruktur yang mudah diikuti oleh pemula
-                sekalipun.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-start space-x-4">
-            <div class="flex flex-col items-center space-y-4">
-              <div
-                class="w-12 h-12 rounded-lg border border-white flex items-center justify-center text-white font-bold text-lg select-none hover:bg-white hover:text-black transition"
-              >
-                #02
-              </div>
-              <div
-                class="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center -mt-2.5"
-              >
-                <img src="Assets/verify.png" alt="Ikon verifikasi ungu" />
-              </div>
-            </div>
-            <div class="flex-1">
-              <p class="text-purple-600 font-semibold leading-relaxed">
-                Akses lebih dari
-                <span class="text-blue-600">
-                  1000+ materi coding dan proyek
-                </span>
-              </p>
-              <p class="text-white leading-relaxed">
-                mulai dari web development, mobile app, hingga teknologi AI yang
-                selalu diperbarui.
-              </p>
-            </div>
-          </div>
-
-          <img
-            alt="Tampilan kode program dengan terminal"
-            class="rounded-lg hover:scale-105 transition duration-300"
-            src="https://static.vecteezy.com/system/resources/previews/004/695/781/original/programming-code-coding-or-hacker-background-programming-code-icon-made-with-binary-code-digital-binary-data-and-streaming-digital-code-matrix-background-with-digits-1-0-illustration-vector.jpg"
-            class="rounded-lg"
-          />
+      
+        <!-- Button -->
+        <div class="flex justify-center">
+          <button
+            class="bg-[#5b7fcf] text-white text-[13px] font-semibold px-5 py-2 rounded flex items-center gap-2 hover:bg-[#4a6bb8] transition-colors"
+            type="button"
+          >
+            <i class="fab fa-discord text-[16px]"></i>
+            Gabung Komunitas Eksklusif Kami
+          </button>
         </div>
-
-        <div class="hidden md:flex flex-col items-center relative">
-          <div class="w-px bg-white h-full"></div>
-        </div>
-
-        <div class="md:w-1/2 flex flex-col space-y-10">
-          <div class="flex items-start space-x-4">
-            <div class="flex flex-col items-center space-y-4">
-              <div
-                class="w-12 h-12 rounded-lg border border-white flex items-center justify-center text-white font-bold text-lg select-none hover:bg-white hover:text-black transition"
-              >
-                #03
-              </div>
-              <div
-                class="w-6 h-6 bg-blue-600 rounded-full flex items-center justify-center -mt-2.5"
-              >
-                <img src="Assets/verify.png" alt="Ikon verifikasi biru" />
-              </div>
-            </div>
-            <div class="flex-1">
-              <p class="text-purple-600 font-semibold leading-relaxed">
-                Dapatkan bimbingan langsung dari
-                <span class="text-white">
-                  mentor-mentor ahli berpengalaman
-                </span>
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-start space-x-4">
-            <div class="flex flex-col items-center space-y-4">
-              <div
-                class="w-12 h-12 rounded-lg border border-white flex items-center justify-center text-white font-bold text-lg select-none hover:bg-white hover:text-black transition"
-              >
-                #04
-              </div>
-              <div
-                class="w-6 h-6 bg-purple-600 rounded-full flex items-center justify-center -mt-2.5"
-              >
-                <img src="Assets/verify.png" alt="Ikon verifikasi ungu" />
-              </div>
-            </div>
-            <div class="flex-1">
-              <p class="text-purple-600 font-semibold leading-relaxed">
-                Selain teori, kami fokus ke praktik nyata,
-              </p>
-              <p class="text-white leading-relaxed">
-                sehingga kamu siap kerja dan membangun portofolio sejak kursus
-                berlangsung.
-              </p>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
-            <img
-              alt="Editor kode web development"
-              class="rounded-md hover:scale-105 transition duration-300"
-              src="https://wallpapers.com/images/hd/coding-background-9izlympnd0ovmpli.jpg"
-            />
-            <img
-              alt="Desain antarmuka mobile app"
-              class="rounded-md hover:scale-105 transition duration-300"
-              src="https://as2.ftcdn.net/v2/jpg/02/18/53/75/1000_F_218537567_Z4W3By4FP4VTi8ncqA0Uv1RiGdcuKWnk.jpg"
-            />
-            <img
-              alt="Orang sedang coding di laptop"
-              class="rounded-md hover:scale-105 transition duration-300"
-              src="https://wallup.net/wp-content/uploads/2018/03/17/540089-programmers-AutoHotkey-code-programming-laptop-ThinkPad.jpg"
-            />
-            <img
-              alt="Konsep pemrograman AI"
-              class="rounded-md hover:scale-105 transition duration-300"
-              src="https://blog.codeweek.eu/wp-content/uploads/2023/03/Women-shaping-the-future-of-coding-blog-08.03.2023.jpg"
-            />
-            <img
-              alt="Ilmu data dan analitik"
-              class="rounded-md hover:scale-105 transition duration-300"
-              src="https://getwallpapers.com/wallpaper/full/9/4/d/358396.jpg"
-            />
-            <img
-              alt="Pemrograman smart contract"
-              class="rounded-md hover:scale-105 transition duration-300"
-              src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Best-Programming-Languages-to-Start-Learning-Today.jpg"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+      </section>
+      
+  
 
     <section class="max-w-7xl mx-auto px-4 py-12 space-y-20">
       <!-- BONUS TITLE -->
@@ -333,23 +224,23 @@
       </div>
 
       <!-- ITEM 2 -->
-      <div class="text-center max-w-4xl mx-auto" data-aos="fade-down">
+      <div class="text-center max-w-4xl mx-auto animate-fade-in">
         <h2 class="text-3xl sm:text-4xl font-extrabold mb-8">
           <span class="text-gray-400 text-lg align-top mr-1"> 02. </span>
           <span class="font-extrabold text-purple-600"> Materi </span>
-          <span class="font-extrabold text-blue-500">
-            Lengkap & Terstruktur,
-          </span>
+          <span class="font-extrabold text-blue-500"
+            >Lengkap & Terstruktur,</span
+          >
           <br />
-          <span class="font-extrabold text-white">
-            Dari Pemula Sampai Mahir
-          </span>
+          <span class="font-extrabold text-white"
+            >Dari Pemula Sampai Mahir</span
+          >
         </h2>
       </div>
+
       <div class="flex flex-col lg:flex-row gap-8 lg:gap-12 max-w-6xl mx-auto">
         <div
-          class="lg:w-1/2 bg-gradient-to-tr from-[#1a0a3a] to-[#0a0a1a] rounded-xl p-8 text-left flex flex-col justify-center order-2 lg:order-1"
-          data-aos="fade-right"
+          class="lg:w-1/2 animate-slide-left from-left bg-gradient-to-tr from-[#1a0a3a] to-[#0a0a1a] rounded-xl p-8 text-left flex flex-col justify-center order-2 lg:order-1"
         >
           <p class="text-purple-400 text-lg mb-2">
             Dapatkan akses ke materi belajar coding
@@ -367,15 +258,15 @@
             profesional.
           </p>
         </div>
-        <div class="lg:w-1/2 order-1 lg:order-2" data-aos="fade-left">
+
+        <div class="lg:w-1/2 animate-slide-right from-right order-1 lg:order-2">
           <img
             alt="Illustration of a person learning coding"
             class="rounded-xl w-full object-cover"
-            src="https://rare-gallery.com/uploads/posts/510162-computer-programming.jpg"
+            src="https://rare-gallery.com/uploads/posts/510162-computer-programming.jpg "
           />
         </div>
       </div>
-
       <!-- ITEM 3 -->
       <div class="text-center max-w-4xl mx-auto" data-aos="fade-down">
         <h2 class="text-3xl sm:text-4xl font-extrabold mb-8">
@@ -612,15 +503,17 @@
         width="1920"
       />
       <h1
-        class="text-white font-semibold text-[2.5rem] sm:text-[3rem] md:text-[3.5rem] leading-tight max-w-4xl mx-auto"
+        class="text-white bg-purple-900/80 px-4 py-2 rounded-md font-semibold text-[2.5rem] sm:text-[3rem] md:text-[3.5rem] leading-tight max-w-4xl mx-auto"
       >
         “If A Man Empties His Purse Into His Head No Man Can Take It Away”
       </h1>
+
       <p
-        class="text-xs sm:text-sm text-white/80 tracking-widest mt-4 uppercase"
+        class="text-xs sm:text-sm text-white bg-purple-900/80 px-4 py-1 rounded-md tracking-widest mt-4 uppercase inline-block"
       >
         BENJAMIN FRANKLIN
       </p>
+
       <button
         aria-label="Gabung Sekarang"
         class="mt-8 bg-gradient-to-r from-purple-500 to-purple-400 px-8 py-3 rounded-md font-semibold text-white flex items-center justify-center gap-2 hover:brightness-110 transition"
@@ -777,39 +670,26 @@
       </div>
     </section>
 
-    <div class="max-w-7xl mx-auto" data-aos="fade-up">
-      <div
-        class="flex flex-col md:flex-row"
-        data-aos="fade-right"
-        data-aos-delay="200"
-      >
+    <div class="max-w-7xl mx-auto overflow-hidden">
+      <div class="flex flex-col md:flex-row">
         <img
           alt="Children sitting at colorful tables in a classroom with a teacher wearing a dark hijab"
-          class="w-full md:w-1/3 object-cover"
-          height="300"
-          src="https://storage.googleapis.com/a1aa/image/191925db-4424-46e2-3eeb-1c19918a148c.jpg"
-          width="400"
+          class="w-full md:w-1/3 max-w-full object-cover"
+          src="https://storage.googleapis.com/a1aa/image/191925db-4424-46e2-3eeb-1c19918a148c.jpg "
         />
         <img
           alt="Group of students in white uniforms posing outside a school building under a red canopy"
-          class="w-full md:w-1/3 object-cover"
-          height="300"
-          src="https://storage.googleapis.com/a1aa/image/60642823-b64e-42a5-4ffd-44b56915f3da.jpg"
-          width="400"
+          class="w-full md:w-1/3 max-w-full object-cover"
+          src="https://storage.googleapis.com/a1aa/image/60642823-b64e-42a5-4ffd-44b56915f3da.jpg "
         />
         <img
           alt="Students in white and red uniforms making heart shapes with their hands in front of a building"
-          class="w-full md:w-1/3 object-cover"
-          height="300"
-          src="https://storage.googleapis.com/a1aa/image/c4a4d0e8-5365-46c0-9977-04f5b3f6af47.jpg"
-          width="400"
+          class="w-full md:w-1/3 max-w-full object-cover"
+          src="https://storage.googleapis.com/a1aa/image/c4a4d0e8-5365-46c0-9977-04f5b3f6af47.jpg "
         />
       </div>
-      <div
-        class="text-center mt-8 px-4"
-        data-aos="fade-left"
-        data-aos-delay="400"
-      >
+
+      <div class="text-center mt-8 px-4">
         <p
           class="text-white font-semibold text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
         >
@@ -824,10 +704,9 @@
           ACADEMY CODING FOUNDER
         </p>
       </div>
+
       <div
         class="bg-black border border-gray-900 mt-12 py-8 px-6 max-w-3xl mx-auto text-center"
-        data-aos="zoom-in"
-        data-aos-delay="600"
       >
         <img
           alt="Academy Coding logo in purple and white"
@@ -837,22 +716,18 @@
           width="40"
         />
         <p class="text-xs text-white mb-1">
-          +628493487346 | tanya@AcademyCoding.com
+          +628493487346 | tanya@academy-coding.vercel.app
         </p>
         <p class="text-xs text-white">Copyright © 2025 All rights reserved</p>
       </div>
-      <div
-        class="max-w-7xl mx-auto mt-8 px-6 text-right"
-        data-aos="fade-up"
-        data-aos-delay="800"
-      >
+
+      <div class="max-w-7xl mx-auto mt-8 px-6 text-right">
         <p class="text-white text-xs">
           Terdaftar pada
           <span class="font-bold"> Kementrian Komunikasi &amp; Digital. </span>
         </p>
       </div>
     </div>
-
     <script
       type="module"
       src="https://unpkg.com/@splinetool/viewer@1.9.94/build/spline-viewer.js"
