@@ -165,7 +165,6 @@ main {
   margin-top: 3rem;
 }
 
-/* From Uiverse.io by cssbuttons-io */ 
 button {
   position: relative;
   display: inline-block;
@@ -270,13 +269,13 @@ button {
   background-color: gray;
 }
 
-.robot-3d {
+.images {
     position: absolute;
     z-index: 10;
-    top: 10%;       
-    right: 0;       
+    top: 20%;       
+    right: 5%;       
     transform: scale(1.1); 
-    max-width: 590px;
+    max-width: 480px;
     pointer-events: none;
   }
   
@@ -449,10 +448,6 @@ margin-left: 459px;
   content {
     margin-top: 85%;
   }
-
-  .robot-3d {
-    transform: translateY(-30%) scale(1.2); /* Ubah posisi dan skala bersamaan */
-  }
 }
 
 @media (max-width: 768px) {
@@ -470,17 +465,6 @@ margin-left: 459px;
   }
   .content {
     margin-top: 25rem;
-  }
-
-  .robot-3d {
-    position: absolute;
-    z-index: 10;
-    top: -20%;       
-    right: 10%;
-    margin-bottom: 10px;       
-    transform: scale(1.1); 
-    max-width: 300px;
-    pointer-events: none;
   }
 
   .content {
@@ -520,6 +504,53 @@ margin-left: 459px;
 
   .testimoni p {
     font-size: 0.95rem;
+  }
+
+  .images {
+    top: 15%;
+    right: 3%;
+    max-width: 320px;
+    transform: scale(0.9);
+  }
+  .tooltip-container {
+    margin-left: auto;
+    margin-right: auto;
+    left: 10%;
+    transform: translateX(-50%);
+    position: relative; /* atau fixed jika perlu */
+    z-index: 9999;
+  }
+
+  .tooltip {
+    position: fixed;
+    top: calc(100% + 50px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    max-width: 300px;
+    padding-right: 12px;
+    font-size: 16px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    white-space: nowrap;
+    border-radius: 30px;
+  }
+
+  .tooltip::before {
+    display: none; /* Hilangkan panah pada mobile */
+  }
+
+  .tooltip-container:hover .tooltip,
+  .tooltip-container:focus .tooltip {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .tooltip-container:hover,
+  .tooltip-container:focus {
+    transform: translateX(-50%) scale(1);
   }
 }
 
