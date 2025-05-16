@@ -177,14 +177,14 @@ button {
   padding: 0;
   font-size: inherit;
   font-family: inherit;
- }
- 
- button.learn-more {
+}
+
+button.learn-more {
   width: 12rem;
   height: auto;
- }
- 
- button.learn-more .circle {
+}
+
+button.learn-more .circle {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: relative;
   display: block;
@@ -193,26 +193,26 @@ button {
   height: 3rem;
   background: #282936;
   border-radius: 1.625rem;
- }
- 
- button.learn-more .circle .icon {
+}
+
+button.learn-more .circle .icon {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
   background: #fff;
- }
- 
- button.learn-more .circle .icon.arrow {
+}
+
+button.learn-more .circle .icon.arrow {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   left: 0.625rem;
   width: 1.125rem;
   height: 0.125rem;
   background: none;
- }
- 
- button.learn-more .circle .icon.arrow::before {
+}
+
+button.learn-more .circle .icon.arrow::before {
   position: absolute;
   content: "";
   top: -0.29rem;
@@ -222,9 +222,9 @@ button {
   border-top: 0.125rem solid #fff;
   border-right: 0.125rem solid #fff;
   transform: rotate(45deg);
- }
- 
- button.learn-more .button-text {
+}
+
+button.learn-more .button-text {
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
   position: absolute;
   top: 0;
@@ -238,113 +238,97 @@ button {
   line-height: 1.6;
   text-align: center;
   text-transform: uppercase;
- }
- 
- button:hover .circle {
+}
+
+button:hover .circle {
   width: 100%;
- }
- 
- button:hover .circle .icon.arrow {
+}
+
+button:hover .circle .icon.arrow {
   background: #fff;
   transform: translate(1rem, 0);
- }
- 
- button:hover .button-text {
+}
+
+button:hover .button-text {
   color: #fff;
- }
-
-.btn-signing-main {
-  text-decoration: none;
-  background-color: lightgray;
-  color: black;
-  padding: 0.6rem 2.5rem;
-  border-radius: 50px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  transition: background-color 0.2s ease;
 }
 
-.btn-signing-main:hover {
-  background-color: gray;
-}
 
 .images {
-    position: absolute;
-    z-index: 10;
-    top: 20%;       
-    right: 5%;       
-    transform: scale(1.1); 
-    max-width: 480px;
-    pointer-events: none;
-  }
-  
-  .testimoni-containers {
-    margin-top: 50px;
-    max-width: 1000px;
-    margin: auto;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .testimoni-containers h1 {
-    font-size: 2.5rem;
-    color: #a259ff;
-    margin-bottom: 40px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .testimoni-containers h1::before,
-  .testimoni-containers h1::after {
-    content: "";
-    flex: 1;
-    height: 2px;
-    background-color: #a259ff;
-    opacity: 0.5;
-  }
-  
-  
-  .testimoni {
-    background-color: #1a1a1d;
-    border: 2px solid #2d033b;
-    border-radius: 15px;
-    padding: 30px 25px;
-    margin-bottom: 25px;
-    box-shadow: 0 0 15px rgba(162, 89, 255, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .testimoni:hover {
-    transform: scale(1.02);
-    box-shadow: 0 0 25px rgba(162, 89, 255, 0.4);
-  }
-  
-  .testimoni p {
-    font-size: 1rem;
-    color: #ddd;
-    margin-bottom: 20px;
-    line-height: 1.6;
-  }
-  
-  .testimoni h2 {
-    font-size: 1.2rem;
-    color: #a259ff;
-    margin-bottom: 5px;
-  }
-  
-  .testimoni h3 {
-    font-size: 1rem;
-    color: #cccccc;
-    font-weight: normal;
-  }
+  border-radius: 25px;
+  position: absolute;
+  z-index: 10;
+  top: 20%;
+  right: 5%;
+  transform: scale(1.1);
+  max-width: 480px;
+  pointer-events: none;
+}
 
+.testimoni-containers {
+  margin-top: 50px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimoni-containers h1 {
+  font-size: 2.5rem;
+  color: #a259ff;
+  margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimoni-containers h1::before,
+.testimoni-containers h1::after {
+  content: "";
+  flex: 1;
+  height: 2px;
+  background-color: #a259ff;
+  opacity: 0.5;
+}
+
+.testimoni {
+  background-color: #1a1a1d;
+  border: 2px solid #2d033b;
+  border-radius: 15px;
+  padding: 30px 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 0 15px rgba(162, 89, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimoni:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(162, 89, 255, 0.4);
+}
+
+.testimoni p {
+  font-size: 1rem;
+  color: #ddd;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.testimoni h2 {
+  font-size: 1.2rem;
+  color: #a259ff;
+  margin-bottom: 5px;
+}
+
+.testimoni h3 {
+  font-size: 1rem;
+  color: #cccccc;
+  font-weight: normal;
+}
 
 .tooltip-container {
-margin-left: 459px;
+  margin-left: 459px;
   position: relative;
   background-color: #f47fff;
   cursor: pointer;
@@ -421,7 +405,7 @@ margin-left: 459px;
   content: "";
   height: 0.6em;
   width: 0.6em;
-  right: -0.10em; /* Mude para a direita */
+  right: -0.1em; /* Mude para a direita */
   top: 50%; /* Altere o topo para o meio da tooltip */
   transform: translateY(-50%) rotate(45deg); /* Use translateY para centralizar verticalmente */
   background: var(--background);
@@ -438,7 +422,6 @@ margin-left: 459px;
   transform: translateX(-50px);
   transition: 0.5s linear;
 }
-
 
 @media (max-width: 1300px) {
   header {
@@ -553,4 +536,3 @@ margin-left: 459px;
     transform: translateX(-50%) scale(1);
   }
 }
-
