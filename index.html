@@ -33,17 +33,19 @@
           <a href="#">CONTACT</a>
         </nav>
 
-        <button
-        class="px-4 sm:px-8 z-30 py-2 sm:py-4 bg-gradient-to-r from-purple-400 via-purple-600 to-purple-800 
-        rounded-md text-white relative font-semibold 
-        after:-z-20 after:absolute after:h-1 after:w-1 after:bg-purple-900 after:left-5 overflow-hidden 
-        after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all 
-        after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 
-        [text-shadow:3px_5px_2px_#6b21a8] hover:[text-shadow:2px_2px_2px_#c084fc] text-lg sm:text-2xl"
-      >
-        Register Now
-      </button>
-      
+        <a href="register.html" id="registerLink" style="text-decoration:none;">
+          <button
+            class="px-4 sm:px-8 z-30 py-2 sm:py-4 bg-gradient-to-r from-purple-400 via-purple-600 to-purple-800 
+            rounded-md text-white relative font-semibold 
+            after:-z-20 after:absolute after:h-1 after:w-1 after:bg-purple-900 after:left-5 overflow-hidden 
+            after:bottom-0 after:translate-y-full after:rounded-md after:hover:scale-[300] after:hover:transition-all 
+            after:hover:duration-700 after:transition-all after:duration-700 transition-all duration-700 
+            [text-shadow:3px_5px_2px_#6b21a8] hover:[text-shadow:2px_2px_2px_#c084fc] text-lg sm:text-2xl"
+          >
+            Register Now
+          </button>
+        </a>
+  
       </header>
 
       <main>
@@ -63,50 +65,54 @@
             Learn, build, and launch your coding career with us!
           </p>
         
-          <!-- WRAPPER TOMBOL -->
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-            <!-- BUTTON JOIN NOW -->
-            <div class="relative group">
-              <button
-                class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
-              >
-                <span
-                  class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
-                ></span>
-                <span class="relative z-10 block px-6 py-3 rounded-xl bg-gray-950">
-                  <div class="relative z-10 flex items-center space-x-2">
-                    <span class="transition-all duration-500 group-hover:translate-x-1">
-                      Join Now
-                    </span>
-                    <svg
-                      class="w-6 h-6 transition-transform duration-500 group-hover:translate-x-1"
-                      data-slot="icon"
-                      aria-hidden="true"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        clip-rule="evenodd"
-                        d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
-                        fill-rule="evenodd"
-                      ></path>
-                    </svg>
-                  </div>
-                </span>
-              </button>
-            </div>
-        
-            <!-- BUTTON JOIN DEMO -->
-            <button
-              class="bg-violet-950 text-violet-400 border border-violet-400 border-b-4 font-medium overflow-hidden relative px-6 py-3 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group"
-            >
-              <span
-                class="bg-violet-400 shadow-violet-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"
-              ></span>
-              Join A Demo
-            </button>
-          </div>
+<!-- WRAPPER TOMBOL -->
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+  <!-- BUTTON JOIN NOW -->
+  <a
+    href="https://discord.com/invite/tqKDmr6S"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="relative inline-block p-px font-semibold leading-6 text-white bg-gray-800 shadow-2xl cursor-pointer rounded-xl shadow-zinc-900 transition-transform duration-300 ease-in-out hover:scale-105 active:scale-95"
+  >
+    <span
+      class="absolute inset-0 rounded-xl bg-gradient-to-r from-teal-400 via-blue-500 to-purple-500 p-[2px] opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+    ></span>
+    <span class="relative z-10 block px-6 py-3 rounded-xl bg-gray-950">
+      <div class="relative z-10 flex items-center space-x-2">
+        <span class="transition-all duration-500 group-hover:translate-x-1">
+          Join Now
+        </span>
+        <svg
+          class="w-6 h-6 transition-transform duration-500 group-hover:translate-x-1"
+          data-slot="icon"
+          aria-hidden="true"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            clip-rule="evenodd"
+            d="M8.22 5.22a.75.75 0 0 1 1.06 0l4.25 4.25a.75.75 0 0 1 0 1.06l-4.25 4.25a.75.75 0 0 1-1.06-1.06L11.94 10 8.22 6.28a.75.75 0 0 1 0-1.06Z"
+            fill-rule="evenodd"
+          ></path>
+        </svg>
+      </div>
+    </span>
+  </a>
+
+  <!-- BUTTON JOIN DEMO -->
+  <a href="#pricing" class="block">
+    <button
+      class="bg-violet-950 text-violet-400 border border-violet-400 border-b-4 font-medium overflow-hidden relative px-6 py-3 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group"
+    >
+      <span
+        class="bg-violet-400 shadow-violet-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"
+      ></span>
+      Join A Demo
+    </button>
+  </a>
+</div>
+
         
           <img class="images" src="Assets/logo.jpeg" alt="" />
         </div>
@@ -160,14 +166,16 @@
       
         <!-- Button -->
         <div class="flex justify-center">
-          <button
+          <a
+            href="https://discord.gg/tqKDmr6S" 
+            target="_blank"
             class="bg-[#5b7fcf] text-white text-[13px] font-semibold px-5 py-2 rounded flex items-center gap-2 hover:bg-[#4a6bb8] transition-colors"
-            type="button"
           >
             <i class="fab fa-discord text-[16px]"></i>
             Gabung Komunitas Eksklusif Kami
-          </button>
+          </a>
         </div>
+        
       </section>
       
   
@@ -369,15 +377,22 @@
     </main>
     <div class="max-w-xs mx-auto mt-10 mb-20">
       <button
+ 
         class="w-full bg-gradient-to-r from-purple-400 to-purple-600 text-white font-bold py-3 rounded-md tracking-wide flex items-center justify-center gap-2 hover:from-purple-500 hover:to-purple-700 transition"
       >
-        <i class="fas fa-play"> </i>
-        Take Action Sekarang
-        <i class="fas fa-angle-left"> </i>
+      <a
+  href="#pricing"
+  class="w-full bg-gradient-to-r from-purple-400 to-purple-600 text-white font-bold py-3 rounded-md tracking-wide flex items-center justify-center gap-2 hover:from-purple-500 hover:to-purple-700 transition"
+>
+  <i class="fas fa-play"></i>
+  Take Action Sekarang
+  <i class="fas fa-angle-left"></i>
+</a>
+
       </button>
     </div>
 
-    <div class="max-w-3xl mx-auto px-4 py-10">
+    <div id="pricing" class="max-w-3xl mx-auto px-4 py-10">
       <p class="text-purple-600 text-xs tracking-widest text-center mb-2">
         PRICING
       </p>
@@ -479,12 +494,16 @@
           </li>
         </ul>
         <div class="max-w-md mx-auto p-6">
-          <button
-            class="w-full bg-gradient-to-b from-purple-500 to-purple-700 rounded-lg border border-purple-600 text-white font-semibold text-center py-3 shadow-[0_4px_6px_rgba(128,90,213,0.7)]"
-            style="font-family: 'Inter', sans-serif"
-          >
-            Dapatkan Akses Sekarang
-          </button>
+          <a href="https://api.whatsapp.com/send?phone=6282125887064&text=Aku%20Nak%20Join%20Kelas%20Academy%20Coding" class="block w-full">
+            <button
+              class="w-full bg-gradient-to-b from-purple-500 to-purple-700 rounded-lg border border-purple-600 text-white font-semibold text-center py-3 shadow-[0_4px_6px_rgba(128,90,213,0.7)]"
+              style="font-family: 'Inter', sans-serif"
+              type="button"
+            >
+              Dapatkan Akses Sekarang
+            </button>
+          </a>
+          
           <div
             class="mt-4 flex justify-center items-center text-white font-semibold text-sm"
             style="font-family: 'Inter', sans-serif"
@@ -507,14 +526,16 @@
       BENJAMIN FRANKLIN
     </p>
 
-      <button
-        aria-label="Gabung Sekarang"
-        class="mt-8 bg-gradient-to-r from-purple-500 to-purple-400 px-8 py-3 rounded-md font-semibold text-white flex items-center justify-center gap-2 hover:brightness-110 transition"
-      >
-        <i class="fas fa-play text-white/70"> </i>
-        Gabung Sekarang
-        <i class="fas fa-play text-white/70 rotate-180"> </i>
-      </button>
+    <button
+    onclick="document.getElementById('pricing').scrollIntoView({ behavior: 'smooth' })"
+    aria-label="Gabung Sekarang"
+    class="mt-8 bg-gradient-to-r from-purple-500 to-purple-400 px-8 py-3 rounded-md font-semibold text-white flex items-center justify-center gap-2 hover:brightness-110 transition"
+  >
+    <i class="fas fa-play text-white/70"></i>
+    Gabung Sekarang
+    <i class="fas fa-play text-white/70 rotate-180"></i>
+  </button>
+  
    
     </section>
 
@@ -639,30 +660,33 @@
       </details>
 
       <div class="flex justify-center mt-8">
+     
         <button
-          class="relative px-8 py-3 bg-black text-white font-semibold rounded-lg border-2 border-purple-500 hover:border-purple-400 transition-all duration-300 hover:shadow-[0_0_20px_10px_rgba(168,85,247,0.6)] active:scale-95 active:shadow-[0_0_10px_5px_rgba(168,85,247,0.4)] group"
-        >
-          <span class="flex items-center space-x-2">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              fill="none"
-              class="w-6 h-6 text-purple-500 group-hover:text-white transition-colors duration-300"
-            >
-              <path
-                d="M5 13l4 4L19 7"
-                stroke-width="2"
-                stroke-linejoin="round"
-                stroke-linecap="round"
-              ></path>
-            </svg>
-            <span>Gabung Sekarang</span>
-          </span>
-          <span
-            class="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-purple-500/20 to-indigo-500/20"
-          ></span>
-        </button>
+        onclick="window.open('https://discord.com/invite/tqKDmr6S', '_blank')"
+        class="relative px-8 py-3 bg-black text-white font-semibold rounded-lg border-2 border-purple-500 hover:border-purple-400 transition-all duration-300 hover:shadow-[0_0_20px_10px_rgba(168,85,247,0.6)] active:scale-95 active:shadow-[0_0_10px_5px_rgba(168,85,247,0.4)] group"
+      >
+        <span class="flex items-center space-x-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            fill="none"
+            class="w-6 h-6 text-purple-500 group-hover:text-white transition-colors duration-300"
+          >
+            <path
+              d="M5 13l4 4L19 7"
+              stroke-width="2"
+              stroke-linejoin="round"
+              stroke-linecap="round"
+            ></path>
+          </svg>
+          <span>Gabung Sekarang</span>
+        </span>
+        <span
+          class="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-purple-500/20 to-indigo-500/20"
+        ></span>
+      </button>
+      
       </div>
     </section>
 

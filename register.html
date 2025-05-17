@@ -1,0 +1,81 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Daftar Akun
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-black text-white min-h-screen flex items-start justify-center p-6">
+  <main class="w-full max-w-md">
+   <header class="mb-8 flex items-center space-x-3">
+    <img alt="Akademi Crypto logo with purple V symbol" class="w-6 h-6" height="24" src="Assets/logo.jpeg" width="24"/>
+    <span class="text-white text-xs font-semibold leading-tight tracking-tight">
+     AKADEMI
+     <br/>
+     CODING
+    </span>
+   </header>
+   <h1 class="text-white text-3xl font-extrabold mb-6">
+    Daftar Akun
+   </h1>
+   <form class="space-y-5">
+    <label class="block">
+     <span class="text-xs font-semibold text-white mb-1 block">
+      Username:*
+     </span>
+     <input class="w-full bg-[#1E1E1E] rounded-xl py-4 px-5 placeholder:text-gray-600 text-white text-sm focus:outline-none" placeholder="Masukan Username" required="" type="text"/>
+    </label>
+    <label class="block">
+     <span class="text-xs font-semibold text-white mb-1 block">
+      Email:*
+     </span>
+     <input class="w-full bg-[#1E1E1E] rounded-xl py-4 px-5 placeholder:text-gray-600 text-white text-sm focus:outline-none" placeholder="Masukan Alamat Email Kamu" required="" type="email"/>
+    </label>
+    <label class="block">
+     <span class="text-xs font-semibold text-white mb-1 block">
+      Nomor Telepon (Whatsapp)
+     </span>
+     <div class="flex items-center bg-[#1E1E1E] rounded-xl py-4 px-5 text-gray-600 text-sm">
+      <span class="text-white font-semibold mr-3 select-none">
+       +62
+      </span>
+      <input class="bg-transparent placeholder:text-gray-600 text-white w-full focus:outline-none" placeholder="Masukkan Nomor Whatsapp" type="tel"/>
+     </div>
+    </label>
+    <label class="block relative">
+     <span class="text-xs font-semibold text-white mb-1 block">
+      Password:*
+     </span>
+     <input class="w-full bg-[#1E1E1E] rounded-xl py-4 px-5 placeholder:text-gray-600 text-white text-sm focus:outline-none" placeholder="Masukan Password" required="" type="password"/>
+     <i aria-hidden="true" class="fas fa-eye absolute right-5 top-[50%] -translate-y-1/2 text-gray-500 cursor-pointer">
+     </i>
+    </label>
+    <p class="text-xs text-white mt-1 mb-6 leading-tight">
+     Dengan mendaftar, saya menyetujui
+     <a class="underline text-white" href="#">
+      Syarat &amp; Ketentuan serta Kebijakan Privasi Akademi Coding.
+     </a>
+    </p>
+    <a href="index.html" class="block w-full">
+        <button
+          class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 rounded-xl text-sm"
+          type="button"
+        >
+          Daftar Sekarang
+        </button>
+      </a>
+      
+   </form>
+  </main>
+ </body>
+</html>

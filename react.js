@@ -24,6 +24,13 @@ AOS.init({
   duration: 800,
   easing: "ease-in-out",
 });
+
 document.addEventListener("DOMContentLoaded", () => {
   AOS.init({ duration: 1000 });
+
+  // Hapus atribut open di semua <details> saat load halaman
+  document.querySelectorAll("details").forEach((el) => el.removeAttribute("open"));
+
+  loadProfile();
 });
+
